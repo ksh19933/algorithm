@@ -1,6 +1,7 @@
 import sys
 input = sys.stdin.readline
-n = input()
+n, m = input().split()
 A = set(map(int, input().split()))
 B = set(map(int, input().split()))
-print(sorted(list(A.union(B))))
+ans = len(A) + len(B) - 2 * len(A & B)
+print(ans)

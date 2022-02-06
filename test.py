@@ -1,1 +1,1 @@
-print(ans)
+print(ord("9"))
